@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EC9DCBB82F509893DEC0C16 /* Pods_DiscountBankExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F47FDA46A32E41343415CCD /* Pods_DiscountBankExam.framework */; };
+		D24E0DA8243515CA00F6FAC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E0DA7243515CA00F6FAC2 /* AppDelegate.swift */; };
+		D24E0DAC243515CA00F6FAC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E0DAB243515CA00F6FAC2 /* ViewController.swift */; };
+		D24E0DAF243515CA00F6FAC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24E0DAD243515CA00F6FAC2 /* Main.storyboard */; };
+		D24E0DB2243515CA00F6FAC2 /* DiscountBankExam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D24E0DB0243515CA00F6FAC2 /* DiscountBankExam.xcdatamodeld */; };
+		D24E0DB4243515CC00F6FAC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24E0DB3243515CC00F6FAC2 /* Assets.xcassets */; };
+		D24E0DB7243515CC00F6FAC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24E0DB5243515CC00F6FAC2 /* LaunchScreen.storyboard */; };
+		D24E0DC2243515CC00F6FAC2 /* DiscountBankExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E0DC1243515CC00F6FAC2 /* DiscountBankExamTests.swift */; };
+		D24E0DCD243515CC00F6FAC2 /* DiscountBankExamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E0DCC243515CC00F6FAC2 /* DiscountBankExamUITests.swift */; };
+		D24E0DDE2435177F00F6FAC2 /* TheMoviedbApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E0DDD2435177F00F6FAC2 /* TheMoviedbApi.swift */; };
+		D24E0DE0243517BD00F6FAC2 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E0DDF243517BD00F6FAC2 /* EndpointType.swift */; };
+		D24E0DE2243517DE00F6FAC2 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E0DE1243517DE00F6FAC2 /* NetworkProtocol.swift */; };
+		D24E0DE42435180C00F6FAC2 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E0DE32435180C00F6FAC2 /* Response.swift */; };
+		D24E0DE72435338300F6FAC2 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E0DE62435338300F6FAC2 /* Genre.swift */; };
+		D24E0DE92435339C00F6FAC2 /* Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E0DE82435339C00F6FAC2 /* Popular.swift */; };
+		D24E0DEB243533AB00F6FAC2 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E0DEA243533AB00F6FAC2 /* Movie.swift */; };
+		D24E0DED24353A8700F6FAC2 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E0DEC24353A8700F6FAC2 /* Networking.swift */; };
+		D2BB4D9424390FB500D3C401 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB4D9324390FB500D3C401 /* SceneDelegate.swift */; };
+		D2BB4D96243912E900D3C401 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB4D95243912E900D3C401 /* Alerts.swift */; };
+		D2D63B882436948700467591 /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63B872436948700467591 /* Genres.swift */; };
+		D2D63B8A2437885F00467591 /* GenreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63B892437885F00467591 /* GenreCollectionViewCell.swift */; };
+		D2D63B8C243788B300467591 /* GenreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63B8B243788B300467591 /* GenreViewModel.swift */; };
+		D2D63B8E2437A27800467591 /* GenreCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63B8D2437A27800467591 /* GenreCollectionViewCellModel.swift */; };
+		D2D63B902437AC7700467591 /* MoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63B8F2437AC7700467591 /* MoviesListViewController.swift */; };
+		D2D63B922437AC9B00467591 /* MoviesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63B912437AC9B00467591 /* MoviesListViewModel.swift */; };
+		D2D63B942437AE9400467591 /* MoviewTabelViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63B932437AE9400467591 /* MoviewTabelViewCellModel.swift */; };
+		D2D63B962437AFD300467591 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63B952437AFD300467591 /* MovieTableViewCell.swift */; };
+		D2D63B982438C1A700467591 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63B972438C1A700467591 /* MovieViewController.swift */; };
+		D2D63B9A2438C1C100467591 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63B992438C1C100467591 /* MovieViewModel.swift */; };
+		D2D63B9C2438E81300467591 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63B9B2438E81300467591 /* Video.swift */; };
+		D2D63B9E2438F08C00467591 /* WKwebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63B9D2438F08C00467591 /* WKwebViewController.swift */; };
+		D2D63BA12438FCC500467591 /* 131249-dark-grey-low-poly-abstract-background-design-vector.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2D63BA02438FCC500467591 /* 131249-dark-grey-low-poly-abstract-background-design-vector.jpg */; };
+		D2D63BA32438FEB000467591 /* 5_Pulp_Fiction.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2D63BA22438FEB000467591 /* 5_Pulp_Fiction.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D24E0DBE243515CC00F6FAC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D24E0D9C243515CA00F6FAC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D24E0DA3243515CA00F6FAC2;
+			remoteInfo = DiscountBankExam;
+		};
+		D24E0DC9243515CC00F6FAC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D24E0D9C243515CA00F6FAC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D24E0DA3243515CA00F6FAC2;
+			remoteInfo = DiscountBankExam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CDA7698FBDFC112D1DBD7EF /* Pods-DiscountBankExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscountBankExam.release.xcconfig"; path = "Target Support Files/Pods-DiscountBankExam/Pods-DiscountBankExam.release.xcconfig"; sourceTree = "<group>"; };
+		2F47FDA46A32E41343415CCD /* Pods_DiscountBankExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiscountBankExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24E0DA4243515CA00F6FAC2 /* DiscountBankExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscountBankExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24E0DA7243515CA00F6FAC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D24E0DAB243515CA00F6FAC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D24E0DAE243515CA00F6FAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D24E0DB1243515CA00F6FAC2 /* DiscountBankExam.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DiscountBankExam.xcdatamodel; sourceTree = "<group>"; };
+		D24E0DB3243515CC00F6FAC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D24E0DB6243515CC00F6FAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D24E0DB8243515CC00F6FAC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D24E0DBD243515CC00F6FAC2 /* DiscountBankExamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscountBankExamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24E0DC1243515CC00F6FAC2 /* DiscountBankExamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountBankExamTests.swift; sourceTree = "<group>"; };
+		D24E0DC3243515CC00F6FAC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D24E0DC8243515CC00F6FAC2 /* DiscountBankExamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscountBankExamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24E0DCC243515CC00F6FAC2 /* DiscountBankExamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountBankExamUITests.swift; sourceTree = "<group>"; };
+		D24E0DCE243515CC00F6FAC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D24E0DDD2435177F00F6FAC2 /* TheMoviedbApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMoviedbApi.swift; sourceTree = "<group>"; };
+		D24E0DDF243517BD00F6FAC2 /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		D24E0DE1243517DE00F6FAC2 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		D24E0DE32435180C00F6FAC2 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		D24E0DE62435338300F6FAC2 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		D24E0DE82435339C00F6FAC2 /* Popular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popular.swift; sourceTree = "<group>"; };
+		D24E0DEA243533AB00F6FAC2 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		D24E0DEC24353A8700F6FAC2 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		D2BB4D9324390FB500D3C401 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D2BB4D95243912E900D3C401 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		D2D63B872436948700467591 /* Genres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
+		D2D63B892437885F00467591 /* GenreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2D63B8B243788B300467591 /* GenreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreViewModel.swift; sourceTree = "<group>"; };
+		D2D63B8D2437A27800467591 /* GenreCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCollectionViewCellModel.swift; sourceTree = "<group>"; };
+		D2D63B8F2437AC7700467591 /* MoviesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewController.swift; sourceTree = "<group>"; };
+		D2D63B912437AC9B00467591 /* MoviesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewModel.swift; sourceTree = "<group>"; };
+		D2D63B932437AE9400467591 /* MoviewTabelViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviewTabelViewCellModel.swift; sourceTree = "<group>"; };
+		D2D63B952437AFD300467591 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		D2D63B972438C1A700467591 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		D2D63B992438C1C100467591 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		D2D63B9B2438E81300467591 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		D2D63B9D2438F08C00467591 /* WKwebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKwebViewController.swift; sourceTree = "<group>"; };
+		D2D63BA02438FCC500467591 /* 131249-dark-grey-low-poly-abstract-background-design-vector.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "131249-dark-grey-low-poly-abstract-background-design-vector.jpg"; sourceTree = "<group>"; };
+		D2D63BA22438FEB000467591 /* 5_Pulp_Fiction.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5_Pulp_Fiction.jpg; sourceTree = "<group>"; };
+		E0A6FBB305284B4FA38BD26C /* Pods-DiscountBankExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiscountBankExam.debug.xcconfig"; path = "Target Support Files/Pods-DiscountBankExam/Pods-DiscountBankExam.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D24E0DA1243515CA00F6FAC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EC9DCBB82F509893DEC0C16 /* Pods_DiscountBankExam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D24E0DBA243515CC00F6FAC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D24E0DC5243515CC00F6FAC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D24E0D9B243515CA00F6FAC2 = {
+			isa = PBXGroup;
+			children = (
+				D24E0DA6243515CA00F6FAC2 /* DiscountBankExam */,
+				D24E0DC0243515CC00F6FAC2 /* DiscountBankExamTests */,
+				D24E0DCB243515CC00F6FAC2 /* DiscountBankExamUITests */,
+				D24E0DA5243515CA00F6FAC2 /* Products */,
+				E8D8C7AD1D7633A827F51148 /* Pods */,
+				DBEBF0E49190DBA26EDE3AF8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D24E0DA5243515CA00F6FAC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D24E0DA4243515CA00F6FAC2 /* DiscountBankExam.app */,
+				D24E0DBD243515CC00F6FAC2 /* DiscountBankExamTests.xctest */,
+				D24E0DC8243515CC00F6FAC2 /* DiscountBankExamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D24E0DA6243515CA00F6FAC2 /* DiscountBankExam */ = {
+			isa = PBXGroup;
+			children = (
+				D24E0DA7243515CA00F6FAC2 /* AppDelegate.swift */,
+				D2BB4D9324390FB500D3C401 /* SceneDelegate.swift */,
+				D24E0DAB243515CA00F6FAC2 /* ViewController.swift */,
+				D2D63B8F2437AC7700467591 /* MoviesListViewController.swift */,
+				D2D63B972438C1A700467591 /* MovieViewController.swift */,
+				D2D63B9D2438F08C00467591 /* WKwebViewController.swift */,
+				D2BB4D95243912E900D3C401 /* Alerts.swift */,
+				D2D63B9F2438FCB200467591 /* Assets */,
+				D24E0DDC2435166000F6FAC2 /* ViewModel */,
+				D24E0DE52435335E00F6FAC2 /* Model */,
+				D24E0DDB2435165900F6FAC2 /* View */,
+				D24E0DDA2435164C00F6FAC2 /* Network */,
+				D24E0DAD243515CA00F6FAC2 /* Main.storyboard */,
+				D24E0DB5243515CC00F6FAC2 /* LaunchScreen.storyboard */,
+				D24E0DB8243515CC00F6FAC2 /* Info.plist */,
+				D24E0DB0243515CA00F6FAC2 /* DiscountBankExam.xcdatamodeld */,
+			);
+			path = DiscountBankExam;
+			sourceTree = "<group>";
+		};
+		D24E0DC0243515CC00F6FAC2 /* DiscountBankExamTests */ = {
+			isa = PBXGroup;
+			children = (
+				D24E0DC1243515CC00F6FAC2 /* DiscountBankExamTests.swift */,
+				D24E0DC3243515CC00F6FAC2 /* Info.plist */,
+			);
+			path = DiscountBankExamTests;
+			sourceTree = "<group>";
+		};
+		D24E0DCB243515CC00F6FAC2 /* DiscountBankExamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D24E0DCC243515CC00F6FAC2 /* DiscountBankExamUITests.swift */,
+				D24E0DCE243515CC00F6FAC2 /* Info.plist */,
+			);
+			path = DiscountBankExamUITests;
+			sourceTree = "<group>";
+		};
+		D24E0DDA2435164C00F6FAC2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D24E0DDD2435177F00F6FAC2 /* TheMoviedbApi.swift */,
+				D24E0DDF243517BD00F6FAC2 /* EndpointType.swift */,
+				D24E0DE1243517DE00F6FAC2 /* NetworkProtocol.swift */,
+				D24E0DE32435180C00F6FAC2 /* Response.swift */,
+				D24E0DEC24353A8700F6FAC2 /* Networking.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D24E0DDB2435165900F6FAC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2D63B892437885F00467591 /* GenreCollectionViewCell.swift */,
+				D2D63B952437AFD300467591 /* MovieTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D24E0DDC2435166000F6FAC2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D2D63B8B243788B300467591 /* GenreViewModel.swift */,
+				D2D63B912437AC9B00467591 /* MoviesListViewModel.swift */,
+				D2D63B932437AE9400467591 /* MoviewTabelViewCellModel.swift */,
+				D2D63B8D2437A27800467591 /* GenreCollectionViewCellModel.swift */,
+				D2D63B992438C1C100467591 /* MovieViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D24E0DE52435335E00F6FAC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D24E0DE62435338300F6FAC2 /* Genre.swift */,
+				D2D63B872436948700467591 /* Genres.swift */,
+				D24E0DE82435339C00F6FAC2 /* Popular.swift */,
+				D24E0DEA243533AB00F6FAC2 /* Movie.swift */,
+				D2D63B9B2438E81300467591 /* Video.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2D63B9F2438FCB200467591 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D2D63BA02438FCC500467591 /* 131249-dark-grey-low-poly-abstract-background-design-vector.jpg */,
+				D2D63BA22438FEB000467591 /* 5_Pulp_Fiction.jpg */,
+				D24E0DB3243515CC00F6FAC2 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DBEBF0E49190DBA26EDE3AF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F47FDA46A32E41343415CCD /* Pods_DiscountBankExam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8D8C7AD1D7633A827F51148 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0A6FBB305284B4FA38BD26C /* Pods-DiscountBankExam.debug.xcconfig */,
+				0CDA7698FBDFC112D1DBD7EF /* Pods-DiscountBankExam.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D24E0DA3243515CA00F6FAC2 /* DiscountBankExam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D24E0DD1243515CC00F6FAC2 /* Build configuration list for PBXNativeTarget "DiscountBankExam" */;
+			buildPhases = (
+				4A69F79780D480A2386781E3 /* [CP] Check Pods Manifest.lock */,
+				D24E0DA0243515CA00F6FAC2 /* Sources */,
+				D24E0DA1243515CA00F6FAC2 /* Frameworks */,
+				D24E0DA2243515CA00F6FAC2 /* Resources */,
+				3E526495BA8E15B3243FDD5C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiscountBankExam;
+			productName = DiscountBankExam;
+			productReference = D24E0DA4243515CA00F6FAC2 /* DiscountBankExam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D24E0DBC243515CC00F6FAC2 /* DiscountBankExamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D24E0DD4243515CC00F6FAC2 /* Build configuration list for PBXNativeTarget "DiscountBankExamTests" */;
+			buildPhases = (
+				D24E0DB9243515CC00F6FAC2 /* Sources */,
+				D24E0DBA243515CC00F6FAC2 /* Frameworks */,
+				D24E0DBB243515CC00F6FAC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D24E0DBF243515CC00F6FAC2 /* PBXTargetDependency */,
+			);
+			name = DiscountBankExamTests;
+			productName = DiscountBankExamTests;
+			productReference = D24E0DBD243515CC00F6FAC2 /* DiscountBankExamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D24E0DC7243515CC00F6FAC2 /* DiscountBankExamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D24E0DD7243515CC00F6FAC2 /* Build configuration list for PBXNativeTarget "DiscountBankExamUITests" */;
+			buildPhases = (
+				D24E0DC4243515CC00F6FAC2 /* Sources */,
+				D24E0DC5243515CC00F6FAC2 /* Frameworks */,
+				D24E0DC6243515CC00F6FAC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D24E0DCA243515CC00F6FAC2 /* PBXTargetDependency */,
+			);
+			name = DiscountBankExamUITests;
+			productName = DiscountBankExamUITests;
+			productReference = D24E0DC8243515CC00F6FAC2 /* DiscountBankExamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D24E0D9C243515CA00F6FAC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Roei Baruch";
+				TargetAttributes = {
+					D24E0DA3243515CA00F6FAC2 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					D24E0DBC243515CC00F6FAC2 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D24E0DA3243515CA00F6FAC2;
+					};
+					D24E0DC7243515CC00F6FAC2 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D24E0DA3243515CA00F6FAC2;
+					};
+				};
+			};
+			buildConfigurationList = D24E0D9F243515CA00F6FAC2 /* Build configuration list for PBXProject "DiscountBankExam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D24E0D9B243515CA00F6FAC2;
+			productRefGroup = D24E0DA5243515CA00F6FAC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D24E0DA3243515CA00F6FAC2 /* DiscountBankExam */,
+				D24E0DBC243515CC00F6FAC2 /* DiscountBankExamTests */,
+				D24E0DC7243515CC00F6FAC2 /* DiscountBankExamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D24E0DA2243515CA00F6FAC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D24E0DB7243515CC00F6FAC2 /* LaunchScreen.storyboard in Resources */,
+				D24E0DB4243515CC00F6FAC2 /* Assets.xcassets in Resources */,
+				D2D63BA12438FCC500467591 /* 131249-dark-grey-low-poly-abstract-background-design-vector.jpg in Resources */,
+				D24E0DAF243515CA00F6FAC2 /* Main.storyboard in Resources */,
+				D2D63BA32438FEB000467591 /* 5_Pulp_Fiction.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D24E0DBB243515CC00F6FAC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D24E0DC6243515CC00F6FAC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E526495BA8E15B3243FDD5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiscountBankExam/Pods-DiscountBankExam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiscountBankExam/Pods-DiscountBankExam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiscountBankExam/Pods-DiscountBankExam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A69F79780D480A2386781E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiscountBankExam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D24E0DA0243515CA00F6FAC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D63B942437AE9400467591 /* MoviewTabelViewCellModel.swift in Sources */,
+				D2D63B8A2437885F00467591 /* GenreCollectionViewCell.swift in Sources */,
+				D24E0DE72435338300F6FAC2 /* Genre.swift in Sources */,
+				D24E0DE92435339C00F6FAC2 /* Popular.swift in Sources */,
+				D2D63B922437AC9B00467591 /* MoviesListViewModel.swift in Sources */,
+				D24E0DE42435180C00F6FAC2 /* Response.swift in Sources */,
+				D24E0DED24353A8700F6FAC2 /* Networking.swift in Sources */,
+				D24E0DAC243515CA00F6FAC2 /* ViewController.swift in Sources */,
+				D2D63B982438C1A700467591 /* MovieViewController.swift in Sources */,
+				D2D63B882436948700467591 /* Genres.swift in Sources */,
+				D2D63B902437AC7700467591 /* MoviesListViewController.swift in Sources */,
+				D2D63B962437AFD300467591 /* MovieTableViewCell.swift in Sources */,
+				D2D63B9C2438E81300467591 /* Video.swift in Sources */,
+				D2D63B8C243788B300467591 /* GenreViewModel.swift in Sources */,
+				D24E0DB2243515CA00F6FAC2 /* DiscountBankExam.xcdatamodeld in Sources */,
+				D24E0DE0243517BD00F6FAC2 /* EndpointType.swift in Sources */,
+				D24E0DE2243517DE00F6FAC2 /* NetworkProtocol.swift in Sources */,
+				D24E0DA8243515CA00F6FAC2 /* AppDelegate.swift in Sources */,
+				D2D63B9E2438F08C00467591 /* WKwebViewController.swift in Sources */,
+				D24E0DEB243533AB00F6FAC2 /* Movie.swift in Sources */,
+				D2D63B9A2438C1C100467591 /* MovieViewModel.swift in Sources */,
+				D2D63B8E2437A27800467591 /* GenreCollectionViewCellModel.swift in Sources */,
+				D2BB4D96243912E900D3C401 /* Alerts.swift in Sources */,
+				D24E0DDE2435177F00F6FAC2 /* TheMoviedbApi.swift in Sources */,
+				D2BB4D9424390FB500D3C401 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D24E0DB9243515CC00F6FAC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D24E0DC2243515CC00F6FAC2 /* DiscountBankExamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D24E0DC4243515CC00F6FAC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D24E0DCD243515CC00F6FAC2 /* DiscountBankExamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D24E0DBF243515CC00F6FAC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D24E0DA3243515CA00F6FAC2 /* DiscountBankExam */;
+			targetProxy = D24E0DBE243515CC00F6FAC2 /* PBXContainerItemProxy */;
+		};
+		D24E0DCA243515CC00F6FAC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D24E0DA3243515CA00F6FAC2 /* DiscountBankExam */;
+			targetProxy = D24E0DC9243515CC00F6FAC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D24E0DAD243515CA00F6FAC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D24E0DAE243515CA00F6FAC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D24E0DB5243515CC00F6FAC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D24E0DB6243515CC00F6FAC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D24E0DCF243515CC00F6FAC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D24E0DD0243515CC00F6FAC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D24E0DD2243515CC00F6FAC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0A6FBB305284B4FA38BD26C /* Pods-DiscountBankExam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJYT75AVYF;
+				INFOPLIST_FILE = DiscountBankExam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sdd.DiscountBankExam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D24E0DD3243515CC00F6FAC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CDA7698FBDFC112D1DBD7EF /* Pods-DiscountBankExam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJYT75AVYF;
+				INFOPLIST_FILE = DiscountBankExam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sdd.DiscountBankExam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D24E0DD5243515CC00F6FAC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJYT75AVYF;
+				INFOPLIST_FILE = DiscountBankExamTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sdd.DiscountBankExamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiscountBankExam.app/DiscountBankExam";
+			};
+			name = Debug;
+		};
+		D24E0DD6243515CC00F6FAC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJYT75AVYF;
+				INFOPLIST_FILE = DiscountBankExamTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sdd.DiscountBankExamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiscountBankExam.app/DiscountBankExam";
+			};
+			name = Release;
+		};
+		D24E0DD8243515CC00F6FAC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJYT75AVYF;
+				INFOPLIST_FILE = DiscountBankExamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sdd.DiscountBankExamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DiscountBankExam;
+			};
+			name = Debug;
+		};
+		D24E0DD9243515CC00F6FAC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJYT75AVYF;
+				INFOPLIST_FILE = DiscountBankExamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sdd.DiscountBankExamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DiscountBankExam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D24E0D9F243515CA00F6FAC2 /* Build configuration list for PBXProject "DiscountBankExam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D24E0DCF243515CC00F6FAC2 /* Debug */,
+				D24E0DD0243515CC00F6FAC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D24E0DD1243515CC00F6FAC2 /* Build configuration list for PBXNativeTarget "DiscountBankExam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D24E0DD2243515CC00F6FAC2 /* Debug */,
+				D24E0DD3243515CC00F6FAC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D24E0DD4243515CC00F6FAC2 /* Build configuration list for PBXNativeTarget "DiscountBankExamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D24E0DD5243515CC00F6FAC2 /* Debug */,
+				D24E0DD6243515CC00F6FAC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D24E0DD7243515CC00F6FAC2 /* Build configuration list for PBXNativeTarget "DiscountBankExamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D24E0DD8243515CC00F6FAC2 /* Debug */,
+				D24E0DD9243515CC00F6FAC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D24E0DB0243515CA00F6FAC2 /* DiscountBankExam.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D24E0DB1243515CA00F6FAC2 /* DiscountBankExam.xcdatamodel */,
+			);
+			currentVersion = D24E0DB1243515CA00F6FAC2 /* DiscountBankExam.xcdatamodel */;
+			path = DiscountBankExam.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D24E0D9C243515CA00F6FAC2 /* Project object */;
+}
